@@ -12,33 +12,34 @@
 
 /*behaiours*/
 form:hover{
-    box-shadow: 0px 0px 30px lightcyan;
-    transition: 0.5s;
+   animation: formGlow 2s infinite
 }
 
-textarea:active, input:active{
-    outline-color: lightseagreen;
+@keyframes formGlow {
+    0% { box-shadow: 0px 0px 30px lightcyan;}
+    50% {box-shadow: none;}
+    100% { box-shadow: 0px 0px 30px lightcyan;}
+    
 }
+
 
 textarea:focus, input:focus{
    outline-color: darkcyan;
    transition: 0.5s;
-   box-shadow: 0 0px 8px lightcyan;
 }
 /*behaiours*/
 
 
 form{
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+    margin-top: 10rem;
     width: 20rem;
     height: auto;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: lightseagreen;
-    border: 1px solid gray;
+    background-color: transparent;
+    
     box-shadow: 1px 4px 8px gray;
     border-radius: 12px;
     cursor: default;
@@ -89,20 +90,19 @@ form{
 }
 
 .submit-button{
+    box-shadow: 0px 0px 8px gray;
     color: white;
-    background-color: lightseagreen;
     text-align: center;
-    border: 1px solid gray;
     height: 2rem;
     width: 10rem;
     border-radius: 0.5rem;
 }
 
-input{
+.form-section input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid gray; 
+    box-shadow: 0px 0px 8px gray;
 }
 
 
@@ -115,6 +115,8 @@ input{
     margin-bottom: 1rem;
     font-size: 1rem;
     padding-left: 0.5rem;
+    border: none;
+    box-shadow: 0px 0px 8px darkcyan;
 }
 
 #message{
@@ -126,7 +128,6 @@ input{
     display: flex;
     justify-content: start;
     text-align: start;
-    border: 1px solid gray;
 }
 /*ID*/
 
@@ -150,12 +151,13 @@ input{
         margin-bottom: 1rem;
         font-size: 1rem;
         padding-left: 0.5rem;
-        border: 1px solid darkcyan;
+        border: none;
     }
 
     #message{
         width: 10.7rem;
         height: 5rem;
+        border: none;
     }
 }
 
@@ -172,7 +174,7 @@ input{
         margin-bottom: 1rem;
         font-size: 1rem;
         padding-left: 0.5rem;
-        border: 1px solid darkcyan;
+        border: none;
     }
 }
 
@@ -192,12 +194,13 @@ input{
         margin-bottom: 1rem;
         font-size: 1rem;
         padding-left: 0.5rem;
-        border: 1px solid darkcyan;
+        border: none;
     }
 
     #message{
         width: 16.7rem;
         height: 10rem;
+        border: none;
     }
 }
 /*Media Screen*/

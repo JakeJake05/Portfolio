@@ -3,6 +3,8 @@
     color:white;
     transition: 0.5s;
 }
+
+
 .footericon:hover, .w3schools-icon:hover, .footericon1:hover{
     transform: scale(120%); 
     transition: 0.5s;
@@ -21,22 +23,39 @@
 .resumebutton:hover{
     transition: 0.3s;
     background-color:  rgb(207, 233, 232);
-    border: 1px solid darkcyan ;
-    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid lightseagreen ;
+    box-shadow: 0 0px 8px lightcyan;
     color: black;
     transition: 0.5s;
     cursor: pointer;
 }
 
+@keyframes toggleShadow {
+    0% { box-shadow: 0 0 8px lightcyan; }
+    50% { box-shadow: none; }
+    100% { box-shadow: 0 0 8px lightcyan; }
+  }
+
 .stackcontainer:hover{
-    box-shadow: 0 4px 8px lightcyan;
+    animation: toggleShadow 3s infinite;
+}
+
+
+.btns button:hover{
+    border: none;
+    background-color:  lightcyan;
+    box-shadow: 0 0 12px lightcyan;
+    color: black;
+    transition: 0.5s;
+}
+
+#project-1 img:hover, #project-2 img:hover{
+    transform:scale(1.3,1.3);
     transition: 1s;
 }
-.btns button:hover{
-    background-color:  rgb(207, 233, 232);
-    border: 1px solid darkcyan;
-    box-shadow: 0 4px 8px lightcyan;
-    color: black;
+.myimage:hover{
+    transform: scale(1.2, 1.2);
+    clip-path: none;
     transition: 1s;
 }
 
@@ -66,6 +85,7 @@
             position: fixed;
             z-index: 3;
         }
+        
         .titlecontainer{
             display: none;
         }
@@ -83,6 +103,7 @@
                 border-top: 0;
                 border-width: 100%;
                 position: fixed;
+                z-index: 2;
             }
             .navbar .nav-ul{
                 display: none;
@@ -126,7 +147,10 @@
                 width: 4rem;
                 top:0;
                 margin-top: -0.1rem;
-                margin-left: -1rem;
+            }
+
+            #screen-width-height2{
+                display: block;
             }
 
             .navbar-title a{
@@ -158,7 +182,6 @@
                 text-align: right;
                 font-size: 1rem;
                 margin-top: 0rem;
-                margin-bottom: 2.5rem;
                 
             }
 
@@ -180,25 +203,18 @@
     /*Content*/
         /*Description*/
             .contents{
-                display: block;
-                column-gap: 0rem;
-                padding-top: 0.5rem;
                 z-index: 2;
+                padding: 0;
+                margin: 0;
             }
 
             .description{
-                width: 100%;
-                margin-top: 0rem;
-                margin-bottom: 1rem;
-                
+                width: 100%;        
             }
 
             .description p{
                 font-size: 0.88rem;    
                 padding: 1rem;
-                border-radius: 12px;
-                border: 2px solid white;  
-                box-shadow: 0px 2px 10px lightcyan;
             }
 
             .description b.greeting{
@@ -251,17 +267,28 @@
                 align-items: center;
                 background-color: lightseagreen;
                 color: white;
-                border: 1px solid gray;
-                box-shadow: 0 1px 0px gray;
                 height: 2rem;
                 width: 15rem;
                 border-radius: 0.5rem;
                 margin-top: 1.5rem;
+                animation: resumeglow 2s infinite;
+            }
+
+            @keyframes resumeglow {
+                0% {box-shadow: 0 0 8px lightcyan;}
+                50% {box-shadow: none;}
+                100% {box-shadow: 0 0 8px lightcyan;}
             }
         /*Stack Set*/
     /*Content*/
     
-
+    .projects-images{
+        margin-top: 1.5rem;
+    }
+    .projects-images figure img{
+        width: 15rem;
+        height: auto;
+    }
     
     /*Footer*/
         .footerb{
@@ -349,6 +376,7 @@
     /*Header*/
         .header{
             display: block;    
+            z-index: 3;
         }
 
         .navbar{
@@ -356,6 +384,7 @@
             border-top: 0;
             border-left: 0;
             border-right: 0;
+            z-index: 2;
         }
     /*Header*/
 
@@ -370,13 +399,14 @@
             height: auto;
            
             column-gap: 0rem;
+            z-index: 1;
         }
         .introcontainer{
             margin-top: 5rem;
             margin-left: 2rem;
         }
         .intro{ 
-            text-align: center;
+            text-align: right;
             font-size: 2rem;
             padding-bottom: 5rem;
         }
@@ -406,17 +436,28 @@
     /*Profile*/
     
     /*Content*/
-    .contents{
-        margin-top: 0rem;
-        margin-bottom: 10rem;
-    }
+        .contents{
+            margin-top: 0rem;
+            margin-bottom: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
         .description p{
-            font-size: 1.5rem;
-            text-align: center;
+            font-size: 1rem;
+            text-align: left;
         }
 
         .description b.greeting{
-            font-size: 2.8rem;
+            font-size: 2rem;
+        }
+        
+        .resume-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10rem;
         }
 
         .btns { 
@@ -425,16 +466,21 @@
         }
         
         .stackcontainer{
-            height: 15rem;
-            width: 15rem;
+            flex-wrap: wrap;
         }
 
     /*Content*/ 
 
+    .projects-images figure img{
+        width: 20rem;
+        height: auto;
+    }
 
     .form-section{
         margin-bottom: 10rem;
     }
+
+
     /*Footer*/
         .l1{
             margin-bottom: -0.8rem;
@@ -483,11 +529,16 @@
         box-shadow: 1px 4px 30px lightcyan;
        }
 
+    .header{
+        z-index: 3;
+    }
+
     .navbar{
         border: 1px solid gray;
         border-top: 0;
         border-left: 0;
         border-right: 0;
+        z-index: 2;
     }
 
     /*Profile*/
@@ -495,6 +546,7 @@
         margin-top: 12rem;
         margin-bottom: 12em;
         column-gap: 0rem;
+        z-index: 1;
     }
     .intro{ 
         text-align: left;
@@ -514,15 +566,19 @@
 
     /*Content*/
     .contents{
-        margin-bottom: 12rem;
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .description p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: left;
     }
 
     .description b.greeting{
-        font-size: 2.8rem;
+        font-size: 2rem;
     }
 
     .btns { 
@@ -531,8 +587,7 @@
     }
     
     .stackcontainer{
-        height: 15rem;
-        width: 15rem;
+        flex-wrap: wrap;
     }
 
 /*Content*/ 
@@ -541,6 +596,7 @@
         margin-top: 12rem;
         margin-bottom: 12rem;
     }
+
     .ulf{
         column-gap: 8rem;
     }
@@ -559,11 +615,15 @@
         align-items: center;
     }
 
+    .footerb p.copywrite{
+        text-align: center;
+    }
+
 }
 /*Screen: 1500px-1300px*/
 
-/*Screen: 3600px-1600px*/
-@media screen and (min-width: 1500px) and (max-width: 3600px){
+/*Screen: 5900px-1500px*/
+@media screen and (min-width: 1500px) and (max-width: 5900px){
     main{
         margin: 0rem 20rem 0rem 20rem;
         padding: 0rem 2rem 0rem 2rem;
@@ -572,6 +632,10 @@
         
        }
     /*Header*/
+        header{
+            z-index: 4;
+            position: absolute;
+        }
         /*Nav Bar*/
             .navbar{
                 border: 1px solid gray;
@@ -579,6 +643,7 @@
                 border-right: 0;
                 border-top: 0;
                 border-width: 100%;
+                z-index: 3;
             }
         /*Nav Bar*/
     /*Header*/
@@ -587,6 +652,7 @@
         .profile{
             margin-top: 12rem;
             margin-bottom: 12em;
+            z-index: 2;
         }
         .intro{ 
             text-align: left;
@@ -597,6 +663,10 @@
             text-align: right;
             font-size: 2.9rem;
         } 
+
+        .myimage{
+            z-index: 1;
+        }
     /*Profile*/
 
 
@@ -604,29 +674,35 @@
         /*Contents*/
             .contents{
                 margin-top: 0rem;
-                margin-bottom: 12rem;
+                margin-bottom: 10rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0rem;
             }
 
             .description p{
-                font-size: 1.9rem;
-                
+                font-size: 1rem;
+                text-align: left;
             }
 
             .description b.greeting{
-                font-size: 3rem;
+                font-size: 2rem;
             }
 
-            
+            .resume-area{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10rem;
+            }
+
             .btns { 
                 /*Buttons*/
-                display: block;
+                display: block;    
             }
             
             
-            .stackcontainer{
-                height: 15rem; 
-                width: 15rem;
-            }
         /*Contents*/  
     /*Stack Set*/
 
@@ -648,6 +724,8 @@
         border-bottom: 0;
         border-left: 0;
         border-right: 0;
+        bottom: 0;
+        text-align: center;
     }
         .ulf{
             column-gap:20rem;
@@ -671,9 +749,7 @@
             cursor: pointer;
         }
 
-        .footerb {
-            text-align: center;
-        }
+
     /*Footer*/
 }
-/*Screen: 3600px-1000px*/
+/*Screen: 5900px-1000px*/

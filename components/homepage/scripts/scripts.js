@@ -2,22 +2,27 @@
 
 // Simulate an asynchronous operation using a promise
 
-message = "This feature is underdevelopment!";
 
 function clicksomething() {
+    message = "This feature is underdevelopment!";
     alert(message);
 }
 
+
 function updatePlaceholder() {
     const textarea = document.getElementById('message');
-    const div = document.getElementById('screen-width-height');
+    const p = document.getElementById('screen-width-height1');
+    const p2 = document.getElementById('screen-width-height2');
     const width = window.innerWidth;
     const height = window.innerHeight;
     if (textarea) {
-        textarea.placeholder = `Width: ${width}px, Height: ${height}px`;
+        textarea.placeholder = `Current Screen Size: Width: ${width}px, Height: ${height}px`;
     }
-    if (div) {
-        div.textContent = `Width: ${width}px, Height: ${height}px`;
+    if (p) {
+        p.textContent = `Current Screen Size: Width: ${width}px, Height: ${height}px`;
+    }
+    if(p2){
+        p.textContent = `Current Screen Size: Width: ${width}px, Height: ${height}px`;
     }
 }
 
@@ -29,6 +34,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', updatePlaceholder);
 });
 
+
+document.getElementById('submit-button').addEventListener('click', 
+    function(){
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+
+        if (name === '' || email === '' || subject === '' || message === '') {
+            return false;
+        }
+        else{
+            alert('Submit');
+            return true;
+        }
+});
+
+//Download Button Function
 document.getElementById('resume-button').addEventListener('click', 
     function(){
         const resume = '../../files/Resume_Napoli,MarlouJakeL.pdf';
@@ -44,3 +68,8 @@ document.getElementById('resume-button').addEventListener('click',
         // Clean up
         document.body.removeChild(a);
 });
+
+const buttons = document.getElementsByClassName('index-button');
+for(let button of buttons){
+    button.addEventListener('click', clicksomething);
+}
