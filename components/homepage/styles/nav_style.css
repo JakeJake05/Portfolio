@@ -1,0 +1,33 @@
+ /*navigation bar styles*/
+ .navbar {
+    display: flex;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 4rem;
+}
+
+.navbar a {
+    color: lightgray;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem ;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+}
+
+.navbar .nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .header-ul{
+    display: none;
+}
+
+
+.hamburgericon, a h1.headertitle{
+    cursor: pointer;
+}

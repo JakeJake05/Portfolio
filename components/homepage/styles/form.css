@@ -1,0 +1,203 @@
+/*
+.profile{
+    background-color: red;
+}
+.contents{
+    background-color: blue;
+}
+.section-resume-container{
+    background-color: green;
+}
+*/
+
+/*behaiours*/
+form:hover{
+    box-shadow: 0px 0px 30px lightcyan;
+    transition: 0.5s;
+}
+
+textarea:active, input:active{
+    outline-color: lightseagreen;
+}
+
+textarea:focus, input:focus{
+   outline-color: darkcyan;
+   transition: 0.5s;
+   box-shadow: 0 0px 8px lightcyan;
+}
+/*behaiours*/
+
+
+form{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    width: 20rem;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: lightseagreen;
+    border: 1px solid gray;
+    box-shadow: 1px 4px 8px gray;
+    border-radius: 12px;
+    cursor: default;
+}
+
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.feedback-form label, .feedback-form h1{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.feedback-form h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-container, .name-container{
+    display: block;
+    justify-content: stretch;
+    align-items: stretch;
+    column-gap: 1rem;
+}
+
+.submit-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.submit-button:hover{
+    background-color:  rgb(207, 233, 232);
+    border: 1px solid darkcyan ;
+    box-shadow: 0px 0px 8px darkcyan;
+    color: black;
+    transition: 0.3s;
+}
+
+.submit-button{
+    color: white;
+    background-color: lightseagreen;
+    text-align: center;
+    border: 1px solid gray;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray; 
+}
+
+
+/*ID*/
+#name, #email, #subject, #message{
+    height: 1.8rem;
+    width: 19.5rem;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+#message{
+    resize: none;
+    overflow: auto;
+    padding: 0.5rem;
+    width: 18.7rem;
+    height: 10rem;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    border: 1px solid gray;
+}
+/*ID*/
+
+
+/*Media Screen*/
+@media screen and (min-width:300px) and (max-width: 500px) {
+    form{
+        width: 1rem;
+        height: auto;
+    }
+
+    .feedback-form label, .feedback-form h1{
+        font-size: 1rem;
+    }
+
+    #name, #email, #subject, #message{
+        height: 1.5rem;
+        width: 11rem;
+        border-radius: 5px;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        border: 1px solid darkcyan;
+    }
+
+    #message{
+        width: 10.7rem;
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    form{
+        margin-top: 4rem;
+        margin-bottom: -8rem;
+    }
+    #name, #email, #subject, #message{
+        height: 1.5rem;
+        width: 9rem;
+        border-radius: 5px;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        border: 1px solid darkcyan;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    form{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 18rem;
+        height: auto;
+    }
+
+    #name, #email, #subject, #message{
+        height: 1.5rem;
+        width: 17rem;
+        border-radius: 5px;
+        margin-top: 0.2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        border: 1px solid darkcyan;
+    }
+
+    #message{
+        width: 16.7rem;
+        height: 10rem;
+    }
+}
+/*Media Screen*/
