@@ -1,0 +1,679 @@
+/*behaviors style*/
+.list-outer-1 a:hover, .navbar a:hover, a h1.headertitle:hover{
+    color:white;
+    transition: 0.5s;
+}
+.footericon:hover, .w3schools-icon:hover, .footericon1:hover{
+    transform: scale(120%); 
+    transition: 0.5s;
+}
+
+/*Navigation Bar*/
+.navbar a.hamburgericon:hover{
+    background-color: white;
+    color: black;
+    clip-path: circle();
+    transition: 0.5s;
+}
+/*Navigation Bar*/
+
+/*Stack Set*/
+.resumebutton:hover{
+    transition: 0.3s;
+    background-color:  rgb(207, 233, 232);
+    border: 1px solid darkcyan ;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.stackcontainer:hover{
+    box-shadow: 0 4px 8px lightcyan;
+    transition: 1s;
+}
+.btns button:hover{
+    background-color:  rgb(207, 233, 232);
+    border: 1px solid darkcyan;
+    box-shadow: 0 4px 8px lightcyan;
+    color: black;
+    transition: 1s;
+}
+
+/*Stack Set*/
+
+/*Footer
+.ulf img.footericon:hover, .w3schools-icon:hover{
+    box-shadow: 0px 0px 1px 1px;
+    box-sizing:unset;
+    box-decoration-break: slice;
+}
+/*Footer*/
+
+/*Screen: 700-300px*/
+@media screen and (min-width:300px) and (max-width: 700px) {
+
+
+    .body{
+        display: block;
+    }
+    /*Header*/
+        header{
+            width: 100%;
+            height: 0rem;
+            background-color: rgb(18, 118, 118);
+            padding-bottom: 0rem;
+            position: fixed;
+            z-index: 3;
+        }
+        .titlecontainer{
+            display: none;
+        }
+        
+        /*Navigation Bar*/
+            .navbar{
+                padding-top: 0rem;
+                padding-left: 0rem;
+                padding-bottom: 1.5rem;
+                height: 1rem;
+                column-gap: 2rem;
+                border: 1px solid gray;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                border-width: 100%;
+                position: fixed;
+            }
+            .navbar .nav-ul{
+                display: none;
+            }
+
+            .navbar .header-ul{
+                display: flex;
+                width: 100%;   
+                padding-top: 0.1rem;
+                padding-bottom: 2.5rem;  
+                column-gap: 2rem;   
+            }
+            abbr{
+                text-decoration: none;
+            }
+            .header-ul .titlebar{
+                width: 100%;
+            }
+            .hmbicon{
+                display: block;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0rem;
+                margin-left: 0.5rem;
+                border-radius: 50%;
+                height: auto;
+                width: 2.5rem;
+                cursor: pointer;
+            }
+
+            .hamburgericon{
+                margin-left: -0.4rem;
+                cursor: pointer;
+                margin-bottom: 2rem;
+            }
+
+            .navbar-title{
+                display: block;
+                text-align: center;
+                height: 2.4rem;
+                width: 4rem;
+                top:0;
+                margin-top: -0.1rem;
+                margin-left: -1rem;
+            }
+
+            .navbar-title a{
+                cursor: pointer;
+                margin-top: -1rem;
+            }
+
+            .navbar-title a h1.headertitle{
+                font-size: 1.5rem;
+                margin-top: -1.9rem;
+            }
+        /*Navigation Bar*/
+    /*Header*/
+
+    /*Profile*/
+        .profile{
+            position: relative;
+            margin-top: 3rem;
+            margin-bottom: 0rem;
+            padding-left: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0rem;
+            z-index: 1;
+        }
+        /*Intro*/
+            .intro{
+                text-align: right;
+                font-size: 1rem;
+                margin-top: 0rem;
+                margin-bottom: 2.5rem;
+                
+            }
+
+            .intro b.name{
+                font-size: 1.6rem;
+            }
+        /*Intro*/
+
+
+        /*Image*/
+            .myimage {
+                width: 10rem;
+                height: auto;
+                margin-top: 0rem;    
+            }
+        /*Image*/
+    /*Profile*/
+
+    /*Content*/
+        /*Description*/
+            .contents{
+                display: block;
+                column-gap: 0rem;
+                padding-top: 0.5rem;
+                z-index: 2;
+            }
+
+            .description{
+                width: 100%;
+                margin-top: 0rem;
+                margin-bottom: 1rem;
+                
+            }
+
+            .description p{
+                font-size: 0.88rem;    
+                padding: 1rem;
+                border-radius: 12px;
+                border: 2px solid white;  
+                box-shadow: 0px 2px 10px lightcyan;
+            }
+
+            .description b.greeting{
+                font-size: 1rem;
+            }
+        /*Description*/
+
+            
+        /*Stack Set*/
+            .stackcontainer .button{
+                display: none;
+            }    
+            .stackcontainer{
+                display: none;
+            }
+        
+            .stackcontainer label.resumelbl{
+                display: flex;
+                color: black;
+            }
+            .stackcontainer:hover, label.resumelbl:hover{
+                background-color:  rgb(207, 233, 232);
+                color: black;
+                cursor:pointer;
+            }
+            .in-stackcontainer{
+                background-color: darkcyan;
+                color: white;
+                font-size: 0.88rem;
+            }
+        
+            .in-stackcontainer ul{
+            display: none;
+            }
+            
+
+            div.resume-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0.5rem;
+                height: 2rem;
+                width: auto;
+
+            }
+            
+            .resumebutton{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: lightseagreen;
+                color: white;
+                border: 1px solid gray;
+                box-shadow: 0 1px 0px gray;
+                height: 2rem;
+                width: 15rem;
+                border-radius: 0.5rem;
+                margin-top: 1.5rem;
+            }
+        /*Stack Set*/
+    /*Content*/
+    
+
+    
+    /*Footer*/
+        .footerb{
+            margin-top: -2rem;
+            border: 1px solid gray;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            display: block;
+        }
+        .ulf{
+            display: block;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            font-size: 0.8rem; 
+        
+        }
+        .l1{
+            margin-bottom: -0.8rem;    
+        }
+
+  
+        .list-outer-2-2 img{
+            width: 2rem;
+            height: auto;
+            object-fit: fill;
+        }
+
+        p.copywrite{
+            margin-top: 0.4rem;
+            font-size: 0.8rem;
+            text-align: center;
+        }   
+
+        /*.list-outer-1, .list-outer-2, .list-outer-3, .ulf, .w3schools-icon{
+            border: 1px solid blue;
+        }*/
+
+        .list-outer-1 div, .list-outer-2 div, .list-outer-3 div{
+            text-align: center;
+        }
+        
+
+        .ulf img.footericon{
+            width: 1.5rem;
+            height: auto;
+            object-fit: fill;
+        }
+        .w3schools-icon{
+            width: 2rem;
+        }
+        .ulf img.footericon1{
+            width: 1.5rem;
+            height: auto;
+            object-fit: fill;
+            cursor: pointer;
+        }
+  
+    /*Footer*/
+}
+/*Screen: 700-300px*/
+
+
+/*Screen: 800px-701px*/
+@media screen and (min-width:701px) and (max-width:800px) {
+    main{
+        margin: 0;
+        padding: 0rem 2rem 0rem 2rem;
+        border: none;
+        box-shadow: none;
+       }
+}
+
+
+/*Screen: 1000px-701px*/
+@media screen and (min-width: 701px) and (max-width: 1300px){
+    main{
+        margin: 0rem 3rem 0rem 3rem;
+        padding: 0rem 2rem 0rem 2rem;
+        border: 1px solid lightseagreen;
+        box-shadow: 1px 4px 8px lightcyan;
+       }
+    /*Header*/
+        .header{
+            display: block;    
+        }
+
+        .navbar{
+            border: 1px solid gray;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+        }
+    /*Header*/
+
+    /*Nav Bar*/
+
+    /*Nav Bar*/
+
+    /*Profile*/
+        .profile{
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            height: auto;
+           
+            column-gap: 0rem;
+        }
+        .introcontainer{
+            margin-top: 5rem;
+            margin-left: 2rem;
+        }
+        .intro{ 
+            text-align: center;
+            font-size: 2rem;
+            padding-bottom: 5rem;
+        }
+        .intro .name{
+            text-align: right;
+            font-size: 2.5rem;
+        } 
+        /*Figure*/
+            .imgcontainerinner{
+                margin-right: 2rem;
+                width:50%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;  
+            }
+            /*Image*/
+                .myimage{
+                    margin-right: 2.5rem;  
+                    width: 20rem;
+                    height: auto; 
+                    background-color: transparent;             
+                }
+            /*Image*/
+        /*Figure*/
+    /*Profile*/
+    
+    /*Content*/
+    .contents{
+        margin-top: 0rem;
+        margin-bottom: 10rem;
+    }
+        .description p{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .description b.greeting{
+            font-size: 2.8rem;
+        }
+
+        .btns { 
+            /*Buttons*/
+            display: block;
+        }
+        
+        .stackcontainer{
+            height: 15rem;
+            width: 15rem;
+        }
+
+    /*Content*/ 
+
+
+    .form-section{
+        margin-bottom: 10rem;
+    }
+    /*Footer*/
+        .l1{
+            margin-bottom: -0.8rem;
+        }
+        .ulf{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            column-gap: 7rem;  
+            border: 1px solid gray;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            border-width: 100%;
+        }
+        .list-outer-2 div, .list-outer-3 div, .list-outer-1 div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ulf img.footericon{
+            width: 2rem;
+            height: auto;
+            object-fit: fill;
+            cursor: pointer;
+        }
+        p.copywrite{
+            text-align: center;
+        }
+        /*
+        .list-outer-1, .list-outer-2, .list-outer-3{
+            border: 1px solid blueviolet;
+        }
+    /*Footer*/
+}
+/*Screen: 1000px-900px*/
+
+
+/*Screen: 1500px-1300px*/
+@media  screen and (min-width: 1300px)and (max-width: 1500px) {
+
+    main{
+        margin: 0rem 12rem 0rem 12rem;
+        padding: 0rem 2rem 0rem 2rem;
+        border: 1px solid lightseagreen;
+        box-shadow: 1px 4px 30px lightcyan;
+       }
+
+    .navbar{
+        border: 1px solid gray;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    /*Profile*/
+    .profile{
+        margin-top: 12rem;
+        margin-bottom: 12em;
+        column-gap: 0rem;
+    }
+    .intro{ 
+        text-align: left;
+        font-size: 1.5rem;
+        padding-bottom: 5rem;
+    }
+    .intro .name{
+        text-align: right;
+        font-size: 2rem;
+    } 
+
+    .myimage{
+        width: 18rem;
+        height: auto;
+    }
+    /*Profile*/
+
+    /*Content*/
+    .contents{
+        margin-bottom: 12rem;
+    }
+    .description p{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .description b.greeting{
+        font-size: 2.8rem;
+    }
+
+    .btns { 
+        /*Buttons*/
+        display: block;
+    }
+    
+    .stackcontainer{
+        height: 15rem;
+        width: 15rem;
+    }
+
+/*Content*/ 
+
+    .form-section{
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+    }
+    .ulf{
+        column-gap: 8rem;
+    }
+
+    
+    .ulf img.footericon{
+        width: 2.5rem;
+        height:  auto;
+        object-fit: fill;
+        cursor: pointer;
+    }
+
+    .list-outer-2 div, .list-outer-3 div, .list-outer-1 div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+/*Screen: 1500px-1300px*/
+
+/*Screen: 3600px-1600px*/
+@media screen and (min-width: 1500px) and (max-width: 3600px){
+    main{
+        margin: 0rem 20rem 0rem 20rem;
+        padding: 0rem 2rem 0rem 2rem;
+        border: 1px solid lightseagreen;
+        box-shadow: 1px 4px 30px lightcyan;
+        
+       }
+    /*Header*/
+        /*Nav Bar*/
+            .navbar{
+                border: 1px solid gray;
+                border-left: 0;
+                border-right: 0;
+                border-top: 0;
+                border-width: 100%;
+            }
+        /*Nav Bar*/
+    /*Header*/
+
+    /*Profile*/
+        .profile{
+            margin-top: 12rem;
+            margin-bottom: 12em;
+        }
+        .intro{ 
+            text-align: left;
+            font-size: 2.2rem;
+            padding-bottom: 5rem;
+        }
+        .intro .name{
+            text-align: right;
+            font-size: 2.9rem;
+        } 
+    /*Profile*/
+
+
+    /*Stack Set*/
+        /*Contents*/
+            .contents{
+                margin-top: 0rem;
+                margin-bottom: 12rem;
+            }
+
+            .description p{
+                font-size: 1.9rem;
+                
+            }
+
+            .description b.greeting{
+                font-size: 3rem;
+            }
+
+            
+            .btns { 
+                /*Buttons*/
+                display: block;
+            }
+            
+            
+            .stackcontainer{
+                height: 15rem; 
+                width: 15rem;
+            }
+        /*Contents*/  
+    /*Stack Set*/
+
+    /*
+    .list-outer-1, .list-outer-2, .list-outer-3{
+        border: 1px solid red;
+    }  */
+
+    .form-section{
+        margin-bottom: 12rem;
+    }
+    /*Footer*/
+
+    .footerb{
+        display: block;
+        justify-content: center;   
+        align-items: center; 
+        border: 1px solid gray;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+        .ulf{
+            column-gap:20rem;
+        }
+        .list-outer-2 div, .list-outer-3 div, .list-outer-1 div{
+            display: flex;
+            justify-content: center;   
+            align-items: center; 
+        }
+        .list-outer-3{
+            margin-bottom: 2rem;
+        }
+        p.copywrite{
+            text-align: center;
+        }
+
+        .ulf img.footericon{
+            width: 2.5rem;
+            height:  auto;
+            object-fit: fill;
+            cursor: pointer;
+        }
+
+        .footerb {
+            text-align: center;
+        }
+    /*Footer*/
+}
+/*Screen: 3600px-1000px*/
