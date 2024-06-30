@@ -1,17 +1,64 @@
 /*body content sytle*/
 #screen-width-height1{
-    position: relative;
+    display: none;
     font-size: 0.8rem;
-    color: white;
-    word-wrap: break-word;
+    word-wrap: none;
+    cursor: default;
 }
 
 #screen-width-height2{
-    display: flex;
+    display: none;
     position: absolute;
-    font-size: 0.8rem;
-    color: white;
+    font-size: 0.8rem; 
     word-wrap: break-word;
+    cursor: default;
+}
+
+.ulf img.footericon, .w3schools-icon{
+    background-color: gray;
+}
+
+#screen-width-height1, #screen-width-height2, .intro, .contents{
+    color: darkcyan;
+}
+
+.ulf div dt.dt-footer b, p.copywrite, .projects-images figure, .name,  .description b.greeting,
+.btns button, .description span, .navbar, .footerb, #nav-menu, .resume-container, .projects-images h1, .skills-area h1, 
+div.inner-skills-container, .expeience-area, .education-area{
+    color: lightcyan
+}
+
+.navbar, .footerb, .contents, .ulf img.footericon, .w3schools-icon, .stackcontainer, .projects-images img{
+    box-shadow: 0px 0px 8px darkcyan;
+}
+
+.copywrite p, #resume-button, .btns button{
+    text-align: center;
+}
+
+.copywrite p, .list-outer-2 dt, .list-outer-3 dt, .list-outer-1 dt{
+    cursor: default;
+}
+
+.list-outer-3, .list-outer-2-2, .list-outer-2-2 div, #resume-button{
+    column-gap: 1rem;
+}
+
+.list-outer-1 a{
+    cursor: pointer;
+}
+
+.list-outer-2-2 div, .copywrite p, .ulf, .description, .stackcontainer, .in-stackcontainer, 
+.btns button, .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerb, .list-outer-3, .list-outer-2 div, .list-outer-2-2{
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Header*/
@@ -20,64 +67,41 @@
         top: 0;
         height: auto;
         width: 100%;
-        border: 1px solid gray;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        border-width: 100%;
-
-        background-color: darkcyan;
-
         margin-left: 0rem;
         
     }
 
     header a{
         cursor: pointer;
+        display: inline-flex;
+        border-top: 0;
     }
-
-    .navbar, .footerb{
-        box-shadow: 0px 0px 12px gray;
-    }
+   
 /*Header*/
 
 /*Profile*/
     .profile{
-        background-color: lightseagreen;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         column-gap: 0.5rem;
         margin-top: 13rem;
         margin-bottom: 15rem;
-
-        
     }
 
     .introcontainer{
         margin-top: 4rem;
-        background-color: lightseagreen;
         margin-left: 0.5rem;
-    }
-
-    .introcontainer span{
-        color: hsl(0, 0, 0);
     }
 
     .intro{
         font-size: 3.5rem;
-        color: rgb(207, 233, 232);
     }
 
     .name{
         font-size: 4rem;
-        color: rgb(43, 38, 38);
     }
 
     /*Figure*/
         .imgcontainerinner{
             border-radius: 100%;
-            background-color: lightseagreen;
             width: 20rem;
         }
 
@@ -87,8 +111,6 @@
             height: auto;
             margin:0;
             padding-right: 0.5rem;
-            filter: grayscale(50%);
-            clip-path: circle();
         }
     /*Figure*/
 
@@ -101,13 +123,9 @@
     }
 
     .contents{
-        color: white;
         padding: 0;
-        margin-left: -1.9rem;
-        border-top-right-radius: 120px;
-        border-bottom-right-radius: 120px;
-        box-shadow: 0px 0px 8px darkcyan;
-        z-index: 6;
+        left: 0;
+        z-index: 6;     
     }
 
     .description p{
@@ -118,59 +136,42 @@
         font-size: 2rem;
     }
 
-    .description strong{
-        color:black;
-    }
 
     .btns button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color:lightseagreen;
-        color:lightgray;
         width: 20rem;
         padding: 0.5rem;
         margin: 0.2rem;
         border: none;
         border-radius: 0.5rem;
         
-        animation: borderOnOff 2s infinite;
-        
+        animation: borderOnOff 2s infinite; 
     }
 
 
     @keyframes borderOnOff {
         0% {
-            box-shadow: 0px 0px 8px lightcyan;
+            box-shadow: 0px 0px 8px darkcyan;
         }
         50% {
             box-shadow:none;
         }
         100% {
-            box-shadow: 0px 0px 8px lightcyan;
+            box-shadow: 0px 0px 8px darkcyan;
         } 
     }
 
     .in-stackcontainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-left: 0rem;
         margin-right: 0rem;
     }
 
 
     .stackcontainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: -6rem;
         padding: 0.5rem;
-        background-color: lightseagreen;
+
         border-radius: 12px ;
-        box-shadow: 0px 0px 8px darkcyan;
         width: 60rem;
     }
 
@@ -178,10 +179,6 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-right: 1rem;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         border-radius: 1rem 0rem 0rem 1rem;
         width: 50%;
@@ -197,15 +194,6 @@
 
     .description span{
         font-weight: bold;
-        color: black;
-    }
-
-    .stackcontainer button.resumelink{
-        background-color: darkcyan;
-    }
-
-    .stackcontainer label.resumelbl{
-        display: none;
     }
 
     .resumebutton{
@@ -217,59 +205,166 @@
         height:auto;
     }
     
-    #resume-button{
-       column-gap: 1rem;
-       text-align: center;
-    }
 /*Contnent*/
 
-figure{
-    display: grid;
-}
 
-.projects-images{
-    display: flex;
+
+.skills-area{
+    display: grid;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    padding-right: 1rem;
+    margin-bottom: 0rem;
+}
+
+.skills-area{
+    text-align: center;
+    margin-bottom: 10rem;
+    border: 1px solid darkcyan;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.inner-skills-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 8rem); /* Creates 3 equal-width columns */
+    grid-template-rows: repeat(3, auto);  /* Creates 3 rows with automatic height */
+    column-gap: 0rem;                     /* Gap between columns */
+    row-gap: 0rem;              /* Gap between rows */
+}
+
+.inner-skills-container p{
+    font-size:  1rem;
+    text-align: left;
+}
+
+
+.skills-area h1, .education-area h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+img.tech-icon{
+    width: 2rem;
+    height: auto;
+    object-fit: fill;
+}
+
+.tech-icon2{
+    width: 3.5rem;
+    height: auto;
+    object-fit: fill;
+}
+
+
+.projects-images h1{
+    margin-top: 1rem;
+}
+
+.projects-images a{
+    margin-top: 0.5rem;
+    text-decoration:underline;
+}
+
+.projects-images figure{
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-images figure img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 30rem;
     height: auto;
 }
 
+.projects-images{
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid darkcyan;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.expeience-area h1{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.expeience-area{
+    border: 1px solid darkcyan;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+
+.expeience-area span{
+    color: orangered;
+}
+
+.work-description{
+    list-style:circle;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.expeience-area details{
+    box-shadow: 0 0 8px darkcyan;
+    border-radius: 12px;
+    padding-left: 0.5rem;
+}
+
+.education-area{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 1px solid darkcyan;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+}
+
+.educational-background-college{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0 0 8px darkcyan;
+}
+.education-area h2{
+    text-align: start;
+}
+
+#school-addrs, .school-address, p#date-of-gradation{
+    font-size: 1.5rem;
+}
+
+span.school-name{
+    color: maroon;
+}
 /*Footer*/
     
     .footerb{
         margin-top: 10rem;
-        background-color: darkcyan;
         bottom: 0;
         width: 100%;
         height: auto;
-
-        border: 1px solid gray;
-        border-left: 0;
-        border-right: 0;
-        border-top: 0;
-        border-width: 100%;
-
-        display: block;
-        justify-content: center;
-        align-items: center;
     }
 
     .ulf{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        column-gap: 1.5rem;
-
-    }
-    .ulf, .ulf a, a.resumelink{
-        color: rgb(40, 38, 38);
+        column-gap: 1.5rem;  
     }
 
     .ulf img.footericon, .w3schools-icon{
@@ -277,64 +372,22 @@ figure{
         height: auto;
         object-fit: fill;
         cursor: pointer;
-    }
-
-    .ulf img.footericon1{
-        width: 2.5rem;
-        height: auto;
-        object-fit: fill;
-        cursor: pointer;
+        margin-bottom: 0.5rem;
     }
 
     .w3schools-icon{
-        color: black;
+        width: 2.5rem;
+        height: auto;
     }
 
-  
  
     .list-outer-2 dt, .list-outer-3 dt, .list-outer-1 dt{
-        cursor:default;
+        margin-bottom: 0.5rem;
     }
 
     .copywrite p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor:default;
-        text-align: center;
         padding-bottom: 1rem;
     }
 
-
-    .list-outer-2-2{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        column-gap: 1rem;
-    }
-
-    .list-outer-2 div{
-        display: block;
-        justify-content: center;
-        align-items: center;     
-    }
-
-    .list-outer-2-2 div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 1rem;
-    }
-
-    .list-outer-3{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        column-gap: 1rem;
-    }
-
-    .list-outer-1 a{
-        cursor: pointer;
-    }
 /*Footer*/
 

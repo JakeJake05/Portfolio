@@ -16,9 +16,9 @@ form:hover{
 }
 
 @keyframes formGlow {
-    0% { box-shadow: 0px 0px 30px lightcyan;}
+    0% { box-shadow: 0px 0px 30px darkcyan;}
     50% {box-shadow: none;}
-    100% { box-shadow: 0px 0px 30px lightcyan;}
+    100% { box-shadow: 0px 0px 30px darkcyan;}
     
 }
 
@@ -31,7 +31,6 @@ textarea:focus, input:focus{
 
 
 form{
-    margin-top: 10rem;
     width: 20rem;
     height: auto;
     padding-left: 2rem;
@@ -40,7 +39,8 @@ form{
     padding-bottom: 0.5rem;
     background-color: transparent;
     
-    box-shadow: 1px 4px 8px gray;
+    box-shadow: 1px 4px 8px darkcyan;
+    color: lightcyan;
     border-radius: 12px;
     cursor: default;
 }
@@ -54,7 +54,6 @@ form{
 
 .feedback-form label, .feedback-form h1{
     font-size: 1.2rem;
-    color: white;
 }
 
 .feedback-form h1{
@@ -82,7 +81,7 @@ form{
 }
 
 .submit-button:hover{
-    background-color:  rgb(207, 233, 232);
+    background-color:  lightcyan;
     border: 1px solid darkcyan ;
     box-shadow: 0px 0px 8px darkcyan;
     color: black;
@@ -90,8 +89,7 @@ form{
 }
 
 .submit-button{
-    box-shadow: 0px 0px 8px gray;
-    color: white;
+    box-shadow: 0px 0px 8px darkcyan;
     text-align: center;
     height: 2rem;
     width: 10rem;
@@ -102,7 +100,7 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 8px gray;
+    box-shadow: 0px 0px 8px darkcyan;
 }
 
 
@@ -133,10 +131,11 @@ form{
 
 
 /*Media Screen*/
-@media screen and (min-width:300px) and (max-width: 500px) {
+@media screen and (min-width:300px) and (max-width: 700px) {
     form{
-        width: 1rem;
+        width: 15rem;
         height: auto;
+        margin-bottom: 2rem;
     }
 
     .feedback-form label, .feedback-form h1{
@@ -145,7 +144,7 @@ form{
 
     #name, #email, #subject, #message{
         height: 1.5rem;
-        width: 11rem;
+        width: 14.3rem;
         border-radius: 5px;
         margin-top: 0.2rem;
         margin-bottom: 1rem;
@@ -155,37 +154,17 @@ form{
     }
 
     #message{
-        width: 10.7rem;
-        height: 5rem;
+        width: 13.8rem;
+        height: 7rem;
         border: none;
     }
 }
 
-@media screen and (min-width: 700px) and (max-width: 900px){
+@media screen and (min-width: 701px) and (max-width: 1300px){
     form{
-        margin-top: 4rem;
-        margin-bottom: -8rem;
-    }
-    #name, #email, #subject, #message{
-        height: 1.5rem;
-        width: 9rem;
-        border-radius: 5px;
-        margin-top: 0.2rem;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-        padding-left: 0.5rem;
-        border: none;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    form{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 10rem;
         width: 18rem;
-        height: auto;
     }
-
     #name, #email, #subject, #message{
         height: 1.5rem;
         width: 17rem;
@@ -196,11 +175,20 @@ form{
         padding-left: 0.5rem;
         border: none;
     }
-
     #message{
-        width: 16.7rem;
-        height: 10rem;
+        width: 16.6rem;
+        height: 5rem;
         border: none;
+        margin-bottom: 1.5rem;
+    }
+    .submit-button{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    form{
+        margin-bottom: 10rem;
     }
 }
 /*Media Screen*/

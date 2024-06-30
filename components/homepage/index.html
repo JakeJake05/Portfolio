@@ -24,59 +24,112 @@
     </head>
 
 
-    <body class="body">
-        <header class="header">
+    <body class="body"  id="main-top">
+        <header class="header" id="top-again">
             <nav class="navbar">   
                 <div class="titlecontainer">
                     <a class="titlelink" href="../homepage/index.html" title="Portfolio">Porfolio</a>
                 </div>
 
-                <ul class="nav-ul">
+                <ul class="nav-ul" >
                     <li class="homelink">
-                        <a class="home" href="../homepage/index.html" title="Home">Home</a>
+                        <a  class="home" id="homepage" title="Home">Home</a>
                     </li>
                     <li class="aboutmelink">
-                        <a class="aboutme" href="#" title="About Me">About Me</a>      
+                        <a href="javascript:void(0)" class="aboutme" id="about" title="About Me">About Me</a>      
                     </li> 
+                    <li>
+                        <a href="javascript:void(0)" id="contacts" title="Contacts">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" id="resume" title="Resume">Resume</a>
+                    </li>
                     <li>
                         <p id="screen-width-height1"></p>
                     </li>
                 </ul> 
                 
-                <ul class="header-ul">
-                    <li class="menu">
+                <ul class="header-ul" id="small-return">
+                    <li class="menu"  >
                         <div class="hmbicon">
-                            <a href="javascript:void(0)" class="hamburgericon index-button" id="hamburgericon" name="buttons" title="Menu">&#9776;</a>                  
+                            <a href="javascript:void(0)" class="hamburgericon" id="hamburger-icon" name="buttons" title="Menu">&#9776;</a>                  
                         </div>    
                     </li>      
+                    
                     <li class="titlebar">
                         <div class="navbar-title">                            
-                            <a class="title" href="../homepage/index.html" name="buttons"><h1 title="MJN" class="headertitle"><abbr title="Marlou Jake Napoli">MJN</abbr></h1></a>   
+                            <a id="nav-name" class="title" href="javascript:void(0)" name="buttons"><h1 id="screen2" title="MJN" class="headertitle"><abbr title="Marlou Jake Napoli">MJN</abbr></h1></a>   
                         </div>
-                    </li>           
-                </ul>
-                
+                    </li>     
+                    <li>
+                        <h3 id="screen-width-height2"></h3>
+                    </li>  
+                </ul>      
             </nav>
 
+            <nav id="nav-menu">
+                <ul>
+                    <li >
+                        <a class="nav-link" href="javascript:void(0)" id="to-home">
+                            Home
+                        </a>   
+                    </li>
+                    <li >
+                        <a class="nav-link" href="javascript:void(0)" id="to-about">
+                            About Me
+                        </a>   
+                    </li>
+                    <li>    
+                        <a class="nav-link" href="javascript:void(0)" id="to-contact">
+                            Contacts
+                        </a>  
+                    </li>
+                    <li >
+                        <a class="nav-link" href="javascript:void(0)" id="to-resume">
+                            Resume
+                        </a>   
+                    </li>
+                    <li >
+                        <a class="nav-link" href="javascript:void(0)" id="to-skill">
+                            Skills
+                        </a>    
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="javascript:void(0)" id="to-projects">
+                            Projects
+                        </a>                      
+                    </li>
+                    <li > 
+                        <a class="nav-link" href="javascript:void(0)" id="to-experience">
+                            Experiences
+                        </a>    
+                    </li>
+                    <li class="last-item">
+                        <a class="nav-link" href="javascript:void(0)" id="to-education">
+                            Education
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
-        <main class="main">
+        <main class="main" id="about-me">
            <section class="bodycontent">     
                 <section class="profile">
                     <div class="introcontainer">
                         <p class="intro">I'm <b class="name"> <span>Marlou Jake Napoli </span></b><br>Aspiring Developer</p>
                     </div>
                     <figure class="imgcontainerinner">
-                            <img class="myimage" src="../../images/profile_image.png" alt="Profile Image">
-                    </figure>
+                            <img  id="view-resume" class="myimage" src="../../images/profile_image.webp" alt="Profile Image">
+                    </figure>    
                 </section>
-
+             
                 <article class="contents">      
-                        <div class="description">
-                            <p>
+                        <div class="description" >
+                            <p id="resume-area">
                                 <b class="greeting">Hello,
                                 </b>
-                                <br>I am an aspring<span class="position">Software/Web Developer &lt;/&gt;</span>.
+                                <br>I am an aspring<span class="position"> Software/Web Developer &lt;/&gt;</span>.
                                 <br>I embarked on this Portfolio Project on<datetime><b><span>June 19, 2024</span></b> </datetime>.
                             </p>
                         </div>            
@@ -86,35 +139,33 @@
                     <div class="stackcontainer">
                         <div class="in-stackcontainer">
                             <ul class="btns">
+                                    <li>
+                                        <button class="download-button stackbutton" id="download-resume-button" name="buttons">
+                                            Download Resume
+                                            <img class="download-icon" src="../../images/download-square-svgrepo-com.svg" alt="Download Icon">
+                                        </button>
+                                    </li>
                                     <li>    
-                                            <a href="../pages/feeture-under-development.html" title="Check Skills">
-                                                <button class="skillsbutton stackbutton" id="skill-button" name="buttons">
-                                                    Skills
-                                                </button>
-                                            </a>                                       
+                                        <button class="skillsbutton stackbutton" id="skill-button" name="buttons">
+                                            Skills
+                                        </button>                                   
                                     </li>
                                     <li>
-                                        <a href="../pages/feeture-under-development.html" title="Check Projects">
-                                            <button class="projectsbutton stackbutton" id="project-button" name="buttons">
-                                                Projects
-                                            </button>
-                                        </a>
+                                        <button class="projectsbutton stackbutton" id="project-link" name="buttons">
+                                            Projects
+                                        </button>
+
                                     </li>
                                     <li>
-                                        <a href="../pages/feeture-under-development.html" title="Check Experience">
-                                            <button class="experiencebutton stackbutton" id="experience-button" name="buttons">
-                                                Experience
-                                            </button>
-                                        </a>
+                                        <button class="experiencebutton stackbutton" id="experience-button" name="buttons">
+                                            Experience
+                                        </button>
                                     </li>
-                                    <li>
-                                        <a href="../pages/feeture-under-development.html" title="Check Educational Background">
-                                            <button class="educationalbgbutton stackbutton" id="education-button" name="buttons">
-                                                Education
-                                            </button>
-                                        </a>
-                                        
-                                </li>                  
+                                    <li id="skill-view-1">              
+                                        <button class="educationalbgbutton stackbutton" id="education-button" name="buttons">
+                                            Education
+                                        </button> 
+                                    </li>                  
                             </ul>
                         </div>  
                     </div>          
@@ -122,25 +173,148 @@
 
                 <section class="section-resume-container">
                     <div class="resume-container">
-                            <button class="resumebutton" id="resume-button" name="buttons">
-                                Download Resume
-                                <img class="download-icon" src="../../images/download-square-svgrepo-com.svg" alt="Download Icon">
-                            </button>
+                        <button class="resumebutton" id="resume-button" name="buttons">
+                            Download Resume
+                            <img id="skill-view" class="download-icon" src="../../images/download-square-svgrepo-com.svg" alt="Download Icon">
+                        </button>
                     </div>
                 </section>
 
+                <section class="skills-area" id="skills-area">
+                    <div>
+                        <h1 id="skill-sets">
+                            SKILLS
+                        </h1>
+                    </div>
+                    <div class="skills-container">
+
+                        <div class="inner-skills-container">
+                            <figure>
+                                <img class="tech-icon" src="/images/html-5-svgrepo-com.svg" alt="HTML5 Logo" title="HTML5 Logo">
+                                <p>Basic<br>HTML</p>
+                            </figure>
+                            <figure>
+                                <img class="tech-icon" src="/images/css-3-svgrepo-com.svg" alt="CSS3 Logo" title="CSS3 Logo">
+                                <div><p>Basic<br>CSS</p></div>
+                            </figure>
+
+                            <figure>
+                                <img class="tech-icon" src="/images/javascript-svgrepo-com.svg" alt="JavaScript Logo" title="JavaScript Logo">
+                                <p>Basic<br>JavaScript</p>
+                            </figure>
+
+                            <figure>
+                                <img class="tech-icon" src="/images/c-sharp-svgrepo-com.svg" alt="C Sharp Logo" title="C Sharp Logo">
+                                <p>Basic<br>C#</p>
+                            </figure>
+
+                            
+                            <figure>
+                                <img class="tech-icon" src="/images/dotnet-svgrepo-com.svg" alt="DotNet Logo" title="DotNet Logo">
+                                <p>Framework</p>
+                            </figure>
+
+                            <figure>
+                                <img class="tech-icon2" src="/images/vb-svgrepo-com.svg" alt="VB.NET Logo" title="VB.NET Logo">
+                                <p>Basic<br>VB.NET</p>
+                            </figure>
+
+                            
+                            <figure>
+                                <img class="tech-icon" src="/images/python-svgrepo-com.svg" alt="Python Logo" title="Python Logo">
+                                <p>Basic<br>Python</p>
+                            </figure>
+
+                             
+                            <figure>
+                                <img class="tech-icon2" src="/images/c-plus-plus-svgrepo-com.svg" alt="C-plus-plus Logo" title="C-plus-plus Logo">
+                                <p>Basic<br>C++</p>
+                            </figure>
+             
+                            <figure>
+                                <img class="tech-icon2" src="/images/mysql-logo-svgrepo-com.svg" alt="MySQL Logo" title="MYQL Logo">
+                                <p id="project-view">Basic<br>MYSQL</p>
+                            </figure>
+                         
+                        </div>
+                        
+                    </div>
+                </section>
+                
                 <section class="projects-images"> 
+                    <div>
+                        <h1 id="projects-title">
+                            PROJECTS
+                        </h1>
+                    </div>
                     <figure class="project-1" id="project-1">
                         <img class="project" src="/images/thesis-project-interface.png" alt="Project 1">
-                        <caption>Design Project Interface</caption>
+                        <a href="../pages/feeture-under-development.html" title="Click to learn more about the project"><caption>Design Project Interface</caption></a>
                     </figure>
-
+                    
                     <figure id="project-2">
                         <img class="project" src="/images/Commisioned Project.png" alt="Project 2">
-                        <caption>Commisioned Project Interface</caption>
+                        <a id="experience-view" href="../pages/feeture-under-development.html" title="Click to learn more about the project"><caption>Commisioned Project Interface</caption></a>
                     </figure>
                 </section>
-            
+                
+                <section class="expeience-area">
+                    <div>
+                        <h1>
+                            EXPERIENCES
+                        </h1>
+                    </div>
+
+                    <div class="job-description">
+                        <h2>
+                            ROBOTICS SPECIALIST<br>
+                            <a href="https://techfactors.com/" title="Visit Techfactors Inc Website"><span class="orange">Techfactors Incorporation</span></a>
+                            <p>Academy Department</p>
+                            <p><datetime>February 2024</datetime> - <datetime>Present</datetime></p>
+                        </h2>
+                        <article>
+                            <details  id="education-view">
+                                <ul class="work-description">
+                                    <li>Executed Robotics Curriculum Training Program for the clients of the company   
+                                    </li>
+                                    <li>
+                                        Actively engaged in continuous learning and practice of robotics concepts for grade school to high school
+                                    </li>
+                                    <li>
+                                        Provided support for company and client events related to robotics, ensuring smooth operation and customer satisfaction.
+                                    </li>
+                                    <li>
+                                        Managed inventory of robotics kits, including forecasting and preparing requested kits.
+                                    </li>
+                                    <li >
+                                        Handled Robotics Kits Request Form
+                                    </li>
+                                </ul>
+                            </details>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="education-area">
+                    <div>
+                        <h1>
+                            EDUCATION
+                        </h1>
+                    </div>
+
+                    <div class="educational-background-college">
+                        <article>
+                            <h2>
+                                Bachelor of Science in Computer Engineering<br>
+                                <p class="school-address"><span class="school-name">Univeristy of Cagayan Valley</span></p>
+                                <address id="school-addrs">Balzain East, Tuguegarao City, Cagayan Valley Ph</address>
+                                <p id="date-of-gradation"><datetime>August 2019</datetime> - <datetime>June 2023</datetime></p>
+                            </h2>
+                        </article>
+                       
+                    </div>
+                </section>
+
                 <section class="form-section">
                     <form class="feedback-form" name="feedback-form" id="feedback-form" method="post">
                         <div>   
@@ -148,31 +322,31 @@
                         </div>
                      
                         <div class="name-container">
-                                <label for="name-input">
+                                <label for="name">
                                     Name
                                 </label>
-                                <input id="name" type="text" placeholder="Name" autocomplete="username" required="true">     
+                                <input name="name-input" id="name" type="text" placeholder="Name" autocomplete="username" required="true">     
                         </div> 
 
                         <div class="email-container">
-                                <label for="email-input">
+                                <label for="email">
                                     Email
                                 </label>
-                                <input id="email" type="email" placeholder="Email" autocomplete="email" required="true">
+                                <input name="email-input" id="email" type="email" placeholder="Email" autocomplete="email" required="true">
                         </div>
 
                         <div class="subject-container">
-                                <label for="subject-input">
+                                <label for="subject">
                                     Subject
                                 </label>
-                                <input id="subject" type="text" placeholder="Subject">
+                                <input name="subject-input" id="subject" type="text" placeholder="Subject">
                         </div>
 
                         <div>
-                                <label for="message-input">
+                                <label for="message">
                                     Message
                                 </label>
-                                <textarea name="message-input" id="message" required="true"></textarea>
+                                <textarea name="message-input" id="message" required="true" placeholder="Your Message"></textarea>
                         </div>
 
                         <div class="submit-div" title="Submit">
@@ -183,11 +357,7 @@
 
                     </form>
                </section>
-
            </section>    
-           
-           
-           
         </main>
 
         <footer class="footerb">  
@@ -196,7 +366,7 @@
                     <div>
                         <ul>
                             <li>
-                                <dt><b>Contacts</b></dt>
+                                <dt class="dt-footer"><b>Contacts</b></dt>
                             </li>
     
                             <li class="list-outer-2-2">  
@@ -223,14 +393,21 @@
                                         <img class="footericon" src="/images/github-142-svgrepo-com.svg" alt="GitHub Logo" title="GitHub">
                                     </a>
                                 </div>
+                                <div>
+                                    <address>
+                                        <a href="mailto:napoli.marloujake@gmail.com">
+                                            <img class="footericon" src="/images/icons8-gmail.svg" alt="Gmail Logo" title="Gmail">
+                                        </a>
+                                    </address>
+                                </div>
                             </li>
                         </ul>           
                     </div>          
                 </li>
 
-                <li class="list-outer-3">
+                <li class="list-outer-3" id="contact">
                     <div>
-                        <dt>
+                        <dt class="dt-footer">
                             <b>
                                 Learned From
                             </b>
@@ -247,7 +424,7 @@
 
                 <li class="list-outer-1">
                     <div>
-                        <dt>
+                        <dt class="dt-footer">
                             <b>
                                 Legal
                             </b>
